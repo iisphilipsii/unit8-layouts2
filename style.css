@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+header,
+main,
+section,
+aside,
+footer {
+  border: 2px solid #ccc;
+  padding: 1rem;
+  margin: 0.5rem;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+}
+
+.content {
+  flex: 3;
+}
+
+.sidebar {
+  flex: 1;
+}
+
+main {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+header nav {
+  display: flex;
+  gap: 1rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
