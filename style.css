@@ -14,7 +14,8 @@ footer {
 
 main {
   display: flex;
-  flex-direction: row;
+  grid-template-columns: 3fr 1fr;
+  gap: 1rem;
 }
 
 .content {
@@ -40,4 +41,25 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  display: flex;
+  grid-template-columns: 3fr 1fr;
+}
+
+footer {
+  grid-area: footer;
+}
+
+body {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "main main"
+    "footer footer";
 }
